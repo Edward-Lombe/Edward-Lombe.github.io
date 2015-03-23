@@ -2,7 +2,7 @@
 layout: post
 title:  "Clone and serialize a Javascript function"
 date:   2015-03-23 23:21:16
-categories: javascript
+categories: code
 ---
 Cloning a reference to a Javascript object has been something that I have occasionaly needed to do. Javascript does not provide any builtin methods for doing this, although usually it is quite a simple process of recursively walking through the object and copying primitive values. Depending on the context, you might use `Object.keys()` method, or the slightly more comprehensive `Object.getOwnPropertyNames()`, and use that as the keys of your new object.
 
