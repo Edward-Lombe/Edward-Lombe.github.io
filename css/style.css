@@ -16,7 +16,7 @@ body, html {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
   .cover {
-      background: url(logo.png) no-repeat;
+      background: url(../image/cover_2.png) no-repeat center center;
       background-size: 1920px 1080px;
   }
 }
