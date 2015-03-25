@@ -43,20 +43,14 @@ console.log(bar.string); // 'string'
 Yet this implementation can still leave us with a reference to the old object. Take for example the following.
 
 ~~~
-function inverse(num) {
-    return 1 / this.num;
-}
+function inverse(num) { return 1 / this.num; }
 
-var foo = {
-    num : 10,
-    inverse : inverse
-}
+var foo = { num : 10, inverse : inverse };
 
 var bar = fnClone(foo);
 
 function inverse(num) {
-    if (0 < num && num < 5) {
-        return 1 / num;
+    if (0 < num && num < 5) return 1 / num;
     } else return NaN;
 }
 
@@ -64,7 +58,7 @@ console.log(foo.inverse(foo.num)); // NaN
 console.log(bar.inverse(bar.num)); // NaN
 ~~~
 
-Here, both functions return `NaN` as they both still refer to the same object. I know this is a contrived example, but I feel it demonstrates what the issue. What we need is a way to clone a function.
+Here, both functions return `NaN` as they both still refer to the same object. I know this is a contrived example, but I feel it demonstrates what the issue is. What we need is a way to clone a function.
 
 
 
