@@ -2,12 +2,9 @@
 layout: post
 title:  "Sol Invictus Proposal"
 date:   2016-05-17 09:20:34 +1000
-categories: proposal sol-invictus
 ---
 
 # Sol Invictus Tech Proposals
-
----
 
 ## 1 - Onboard systems
 
